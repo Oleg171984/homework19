@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .weather-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #weather-info {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Погода</h1>
+        <select id="city-select">
+            <option value="Kyiv">Київ</option>
+            <option value="Lviv">Львів</option>
+            <option value="Odesa">Одеса</option>
+            <option value="Kharkiv">Харків</option>
+            <option value="Dnipro">Дніпро</option>
+        </select>
+        <button id="refresh-button">Оновити</button>
+        
+        <div id="weather-info"></div>
+    </div>
+
+</body>
+</html>
